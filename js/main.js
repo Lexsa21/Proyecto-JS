@@ -44,60 +44,68 @@ const productos = [
     // PlayStation
     {
         id: "ps-01",
-        titulo: "Harry Potter y la Piedra Filosofal",
-        imagen: "./img/hp.jpg",
-        alt: "Portada del juego Harry Potter y la Piedra Filosofal para PlayStation",
+        titulo: "Assassin's Creed Syndicate",
+        imagen: "./img/AC-Syndicate-PS.jpg",
+        alt: "Portada de Assassin's Creed Syndicate para PlayStation",
         categoria: { nombre: "PlayStation", id: "playstation" },
         precio: 3500
     },
     {
         id: "ps-02",
-        titulo: "Family Guy: Back to the Multiverse",
-        imagen: "./img/PF.jpg",
-        alt: "Portada del juego Family Guy: Back to the Multiverse para PlayStation",
+        titulo: "Assassin's Creed Unity",
+        imagen: "./img/AC-Unity-PS.avif",
+        alt: "Portada de Assassin's Creed Unity para PlayStation",
         categoria: { nombre: "PlayStation", id: "playstation" },
-        precio: 4500
+        precio: 3200
     },
     {
         id: "ps-03",
-        titulo: "The Peanuts Movie: Snoopy's Grand Adventure",
-        imagen: "./img/snoopy.jpg",
-        alt: "Portada del juego Snoopy's Grand Adventure para PlayStation",
+        titulo: "Assassin's Creed Valhalla",
+        imagen: "./img/AC-Valhalla-PS.jpg",
+        alt: "Portada de Assassin's Creed Valhalla para PlayStation 4",
         categoria: { nombre: "PlayStation", id: "playstation" },
-        precio: 3000
+        precio: 5500
     },
     {
         id: "ps-04",
-        titulo: "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
-        imagen: "./img/tortugas2.jpg",
-        alt: "Portada del juego Tortugas Ninja: Mutants in Manhattan para PlayStation",
+        titulo: "God of War: Ragnarök — Valhalla",
+        imagen: "./img/GOW-Valhalla-PS.jpg",
+        alt: "Portada de God of War Ragnarök Valhalla para PlayStation",
         categoria: { nombre: "PlayStation", id: "playstation" },
-        precio: 5000
+        precio: 6500
+    },
+    {
+        id: "ps-05",
+        titulo: "inFamous 2",
+        imagen: "./img/Infamous2-PS.jpg",
+        alt: "Portada de inFamous 2 para PlayStation",
+        categoria: { nombre: "PlayStation", id: "playstation" },
+        precio: 2800
     },
     // Nintendo
     {
         id: "nintendo-01",
-        titulo: "Harry Potter y las Reliquias de la Muerte",
-        imagen: "./img/hp.jpg",
-        alt: "Portada del juego Harry Potter y las Reliquias de la Muerte para Nintendo",
+        titulo: "Donkey Kong Bananza",
+        imagen: "./img/DK-Nintendo.jpg",
+        alt: "Portada de Donkey Kong Bananza para Nintendo Switch",
         categoria: { nombre: "Nintendo", id: "nintendo" },
-        precio: 3200
+        precio: 4800
     },
     {
         id: "nintendo-02",
-        titulo: "Panda Pop Adventure",
-        imagen: "./img/pandapop.jpg",
-        alt: "Portada del juego Panda Pop Adventure para Nintendo",
+        titulo: "Final Fantasy VII Remake",
+        imagen: "./img/FF-Nintendo.jpg",
+        alt: "Portada de Final Fantasy VII Remake para Nintendo",
         categoria: { nombre: "Nintendo", id: "nintendo" },
-        precio: 2800
+        precio: 5200
     },
     {
         id: "nintendo-03",
-        titulo: "Teenage Mutant Ninja Turtles: Rescue-Palooza",
-        imagen: "./img/tortugas2.jpg",
-        alt: "Portada del juego Tortugas Ninja: Rescue-Palooza para Nintendo",
+        titulo: "The Legend of Zelda: Breath of the Wild",
+        imagen: "./img/ZELDA-Nintendo.jpg",
+        alt: "Portada de The Legend of Zelda: Breath of the Wild para Nintendo Switch",
         categoria: { nombre: "Nintendo", id: "nintendo" },
-        precio: 4200
+        precio: 5800
     }
 ];
 

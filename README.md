@@ -1,32 +1,28 @@
-# 🎮 LexsaGames
+# LexsaGames
 
-Tienda online de videojuegos con carrito de compras funcional, construida con HTML, CSS y JavaScript vanilla — sin frameworks ni dependencias externas más allá de Bootstrap Icons.
+Tienda online de videojuegos con carrito de compras funcional, hecha con HTML, CSS y JavaScript vanilla. Sin frameworks ni dependencias más allá de Bootstrap Icons.
 
+**Demo:** [lexsa21.github.io/Proyecto-JS](https://lexsa21.github.io/Proyecto-JS/)
 
 ## Funcionalidades
 
-- Catálogo de juegos con filtros por categoría (Apps, PlayStation, Nintendo)
-- Carrito de compras persistente con `localStorage`
-- Agregar, eliminar y vaciar productos del carrito
-- Cálculo del total en tiempo real
-- Diseño responsive con CSS Grid
-- Navegación con tab activo y efecto visual con pseudoelementos CSS
+- Catálogo con filtros por categoría (Apps, PlayStation, Nintendo)
+- Carrito persistente con `localStorage`: sobrevive al recargar y al cerrar el navegador
+- Agregar, eliminar y vaciar productos
+- Total calculado en tiempo real
+- Layout responsive con CSS Grid
+- Tab activo en la navegación, resuelto con pseudoelementos
 
-## Tecnologías
+## Stack
 
-| Tecnología | Uso |
-|---|---|
-| HTML5 semántico | Estructura de páginas |
-| CSS3 / CSS Grid | Layout y diseño responsive |
-| JavaScript ES6+ | Lógica de negocio, DOM, localStorage |
-| Bootstrap Icons | Iconografía |
+HTML5 semántico, CSS3 con Grid para el layout y JavaScript ES6+ para toda la lógica. La iconografía viene de Bootstrap Icons. No hay proceso de build ni dependencias que instalar.
 
-## Estructura del proyecto
+## Estructura
 
 ```
-LexsaGames/
-├── index.html          # Página principal — catálogo de productos
-├── carrito.html        # Página del carrito de compras
+Proyecto-JS/
+├── index.html          # Catálogo de productos
+├── carrito.html        # Carrito de compras
 ├── css/
 │   └── main.css        # Estilos globales
 ├── js/
@@ -35,28 +31,23 @@ LexsaGames/
 └── img/                # Imágenes de los productos
 ```
 
-## Cómo correrlo localmente
+## Correr localmente
 
 ```bash
-git clone https://github.com/tu-usuario/LexsaGames.git
-cd LexsaGames
-# Abrir index.html en el navegador, o usar Live Server en VS Code
+git clone https://github.com/Lexsa21/Proyecto-JS.git
+cd Proyecto-JS
 ```
 
-No requiere instalación de dependencias.
+Abrí `index.html` en el navegador, o usá la extensión Live Server de VS Code. No hay dependencias que instalar.
 
-## Lo que aprendí / apliqué
+## Sobre la implementación
 
-- Manipulación del DOM con `querySelector`, `createElement`, `forEach`
-- Persistencia de datos en el cliente con `localStorage` y `JSON.parse/stringify`
-- Filtrado de arrays con `.filter()`, `.find()`, `.findIndex()`
-- Diseño de UI con CSS Grid y posicionamiento relativo/absoluto
-- Separación de responsabilidades entre archivos JS
+**El carrito vive en `localStorage`.** Al agregar un producto se serializa el array con `JSON.stringify` y al cargar la página se recupera con `JSON.parse`. Es lo que permite que el carrito siga ahí después de cerrar el navegador, y que el estado se comparta entre `index.html` y `carrito.html` sin ningún backend.
 
-## Autor
+**Dos páginas, dos archivos de JS.** El catálogo y el carrito están separados en `main.js` y `carrito.js` en vez de un único archivo con todo. Cada página carga solo lo que necesita.
 
-Tu nombre — [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
+**Sin framework, a propósito.** El renderizado del catálogo y del carrito se hace armando elementos con `createElement` y recorriendo los arrays con `forEach`. Hacerlo así primero es lo que después permite entender qué está resolviendo React por debajo.
 
 ---
 
-*Proyecto desarrollado como práctica de desarrollo frontend con JavaScript vanilla.*
+Parte de mi portfolio: [lexsa21.github.io](https://lexsa21.github.io)
